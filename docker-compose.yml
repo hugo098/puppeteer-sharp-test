@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  puppeter-sharp-api:
+    image: ${DOCKER_REGISTRY-}puppetersharpapi
+    build:
+      context: .
+      dockerfile: puppeter-sharp-api/Dockerfile
